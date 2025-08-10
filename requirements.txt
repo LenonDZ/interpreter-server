@@ -1,12 +1,4 @@
-fastapi==0.111.0
-uvicorn[standard]==0.30.1
-python-socketio==5.11.3
-starlette==0.37.2
-pydantic==2.7.4
-numpy==1.26.4
-soundfile==0.12.1
-websockets==12.0
-anyio==4.4.0
-faster-whisper==0.10.0
-argostranslate==1.9.6
-twilio==9.2.3
+fastapi==0.110.0
+uvicorn==0.29.0
+requests==2.31.0
+python-dotenv==1.0.1

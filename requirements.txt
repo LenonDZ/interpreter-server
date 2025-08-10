@@ -10,5 +10,5 @@ anyio==4.4.0
 # Optional providers (use dummy by default)
 faster-whisper==1.0.1
 argostranslate==1.9.6
-TTS==0.22.0
+
 twilio==9.2.3

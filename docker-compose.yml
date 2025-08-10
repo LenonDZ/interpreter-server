@@ -1,0 +1,17 @@
+services:
+  api:
+    build: .
+    container_name: interpreter_api
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+      - PROVIDER_ASR=dummy
+      - PROVIDER_MT=dummy
+      - PROVIDER_TTS=dummy
+      - SAMPLE_RATE=16000
+      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
+      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
+      - TWILIO_NUMBER=${TWILIO_NUMBER}
+      - PUBLIC_HTTP=${PUBLIC_HTTP}
+      - PUBLIC_WS=${PUBLIC_WS}
+    restart: unless-stopped

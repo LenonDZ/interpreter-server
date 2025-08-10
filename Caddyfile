@@ -1,0 +1,8 @@
+{$DOMAIN}
+encode gzip
+reverse_proxy /twilio/ws api:8000 {
+  transport http {
+    versions h2c 1.1
+  }
+}
+reverse_proxy api:8000
